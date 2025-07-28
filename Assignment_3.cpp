@@ -1,3 +1,4 @@
+//to find the smallest number whose factorial contain n trailing 0
 #include <iostream>
 using namespace std;
 
