@@ -1,3 +1,4 @@
+//to move the 0 at the end of the array
 #include <iostream>
 using namespace std;
 class AS2
