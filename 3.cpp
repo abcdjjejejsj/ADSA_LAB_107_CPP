@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Function to count trailing zeros in factorial of num
 int countTrailingZeros(int num) {
     int count = 0;
     int power = 5;
@@ -14,8 +13,7 @@ int countTrailingZeros(int num) {
 
 int findSmallestNumber(int n) {
     int low = n;
-    int high = n * 5; // Worst case, each 5 contributes 1 zero
-
+    int high = n * 5;
     int ans = -1;
 
     while (low <= high) {
@@ -23,12 +21,12 @@ int findSmallestNumber(int n) {
         int zeros = countTrailingZeros(mid);
 
         if (zeros < n) {
-            low = mid + 1; // Need more zeros → go right
+            low = mid + 1;
         } else {
             if (zeros == n) {
-                ans = mid; // Possible answer
+                ans = mid;
             }
-            high = mid - 1; // Try to find smaller one
+            high = mid - 1;
         }
     }
 
